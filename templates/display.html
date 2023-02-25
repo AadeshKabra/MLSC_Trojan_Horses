@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Questions</h1>
+    <div class="questions">
+        {% for question in questions %}
+            <h3>{{ question }}</h3>
+        {% endfor %}
+    </div>
+    
+    
+    <!-- <form action="/language" method="'post">
+        <input type="hidden" value="German" id="language" name="language">
+        <button type="submit">German</button>
+    </form>
+    <form action="/language" method="'post">
+        <input type="hidden" value="Hindi" id="language" name="language">
+        <button type="submit">Hindi</button>
+    </form>
+    <form action="/language" method="'post">
+        <input type="hidden" value="French" id="language" name="language">
+        <button type="submit">French</button>
+    </form> -->
+    
+        
+</body>
+</html>
