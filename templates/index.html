@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,14 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Signika:wght@500&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Signika:wght@500&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <style>
-        <style>
         body {
             background-color: rgb(198, 208, 205);
         }
@@ -21,7 +26,6 @@
             text-align: center;
         }
 
-        /* CSS code for input field */
         label {
             display: block;
             font-size: 1.2rem;
@@ -32,12 +36,26 @@
         .link {
             display: flex;
         }
-
+        .in{
+            display: flex;
+            width: 50%;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            flex-direction: column;
+        }
+        .gram{
+            display: flex;
+            width: 50%;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            flex-direction: column;
+        }
         input[type="text"] {
             padding: 0.5rem;
             font-size: 1rem;
             border: none;
-            /* height: 2rem; */
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
             transition: box-shadow 0.3s ease-in-out;
@@ -115,7 +133,7 @@
 
         .button-19:after {
             background-clip: padding-box;
-            background-color: #1CB0F6;
+            background-color: #06141b;
             border: solid transparent;
             border-radius: 16px;
             border-width: 0 0 4px;
@@ -142,22 +160,39 @@
             cursor: auto;
         }
 
+        #grammar {
+            width: max-content;
+
+        }
+
+        body {
+            background-image: url("static/pexels-pixabay-459271.jpg");
+        }
+        h1{
+            font-family: 'Lato', sans-serif;
+        }
     </style>
 </head>
-<body>
-    <h1 class="heading" >Generating questions based on video</h1>
-    <form action="/formInput" method="post">
-        <label for="inputText">Enter Youtube Link: </label>
-        <input type="text" id="inputText" name="inputText">
 
+<body>
+    <h1 class="heading">Generating questions based on video</h1>
+    <form action="/formInput" method="post">
+        <div class="in">
+            <input type="text" id="inputText" name="inputText" placeholder="Enter youtube link">
         <button class="button-19" role="button" type="submit">Submit</button>
+        </div>
+        
     </form>
-    
+
     <form action="/correctGrammar" method="post">
-        <textarea class="textarea" id="text" name="text">{{ text }}</textarea>
-        <button type="submit">Correct Grammar and Ask</button>
+        <div class="gram">
+            <textarea class="textarea" id="text" name="text">{{ text }}</textarea>
+            <button type="submit" class="button-19" role="button" id="grammar">Correct Grammar and Ask</button>
+        </div>
+
     </form>
 
 
 </body>
+
 </html>

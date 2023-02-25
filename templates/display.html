@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,28 +6,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Signika:wght@500&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+         body {
+            background-color: rgb(198, 208, 205);
+        }
+        h1{
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+        }
+        .questions{
+            display: flex;
+            width: 50%;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            flex-direction: column;
+        }
+        .forms{
+            display: flex;
+            width: 50%;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        .button-19 {
+            appearance: button;
+            background-color: #1899D6;
+            border: solid transparent;
+            border-radius: 16px;
+            border-width: 0 0 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: din-round, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: .8px;
+            /* line-height: 10px; */
+            margin: 7px 20px 0 20px;
+            outline: none;
+            overflow: visible;
+            padding: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            touch-action: manipulation;
+            transform: translateZ(0);
+            transition: filter .2s;
+            user-select: none;
+            -webkit-user-select: none;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 200px;
+        }
+
+        .button-19:after {
+            background-clip: padding-box;
+            background-color: #06141b;
+            border: solid transparent;
+            border-radius: 16px;
+            border-width: 0 0 4px;
+            bottom: -4px;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .button-19:main,
+        .button-19:focus {
+            user-select: auto;
+        }
+
+        .button-19:hover:not(:disabled) {
+            filter: brightness(1.1);
+            -webkit-filter: brightness(1.1);
+        }
+
+        .button-19:disabled {
+            cursor: auto;
+        }
+        body{
+            background-image: url("static/pexels-pixabay-459271.jpg");
+        }
+    </style>
 </head>
 <body>
     <h1>Questions</h1>
-    <div class="questions">
-        {% for question in questions %}
-            <h3>{{ question }}</h3>
-        {% endfor %}
-    </div>
+        <div class="questions">
+            {% for question in questions %}
+                <h3>{{ question }}</h3>
+            {% endfor %}
+        </div>
+        <div class="forms">
+            <form action="/language" method="post">
+                <input type="hidden" value="German" id="language" name="language">
+                <button class="button-19" id="myButton" role="button" type="submit">German</button>
+            </form>
+            <form action="/language" method="post">
+                <input type="hidden" value="Hindi" id="language" name="language">
+                <button class="button-19" id="myButton" role="button" type="submit">Hindi</button>
+            </form>
+            <form action="/language" method="post">
+                <input type="hidden" value="French" id="language" name="language">
+                <button class="button-19" id="myButton" role="button" type="submit">French</button>
+            </form>
+            <!-- <form action="/language" method="post">
+                <input type="hidden" value="French" id="language" name="language">
+                <button class="button-19" id="myButton" role="button" type="submit">French</button>
+            </form> -->
+        </div>
+   
     
     
-    <!-- <form action="/language" method="'post">
-        <input type="hidden" value="German" id="language" name="language">
-        <button type="submit">German</button>
-    </form>
-    <form action="/language" method="'post">
-        <input type="hidden" value="Hindi" id="language" name="language">
-        <button type="submit">Hindi</button>
-    </form>
-    <form action="/language" method="'post">
-        <input type="hidden" value="French" id="language" name="language">
-        <button type="submit">French</button>
-    </form> -->
     
         
 </body>
