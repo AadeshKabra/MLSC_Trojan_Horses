@@ -22,10 +22,14 @@ Kshitij Chaudhari
 Special Thanks to Developers of Genr.AI API. 
 https://docs.genr.ai/docs/genr/05863e3f97d8f-genr-product-info
 
+1. Enter the Youtube Video link to generate questions
 ![WhatsApp Image 2023-02-25 at 15 00 08](https://user-images.githubusercontent.com/103509365/221349922-7e636e12-49ee-498f-9b3c-9ec75a9faca2.jpg)
+2. The grammar of the extracted text is corrected and user provides the number of questions to be generated.
 ![WhatsApp Image 2023-02-25 at 15 00 28](https://user-images.githubusercontent.com/103509365/221349916-d6b1ae47-4e94-42fd-a457-d11e34608b41.jpg)
+3. The generated questions are being displayed.
 ![image](https://user-images.githubusercontent.com/103509365/221349903-0cee4fbd-996e-4c5e-85b6-4d7290153ec8.png)
 ![WhatsApp Image 2023-02-25 at 15 08 47](https://user-images.githubusercontent.com/103509365/221350202-3e2706a9-5fa3-412c-b42e-5ca369e4963c.jpg)
+4. User can also choose the language in which he/she wants to display the generated questions.
 
 
 
